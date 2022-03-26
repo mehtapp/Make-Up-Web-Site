@@ -1,0 +1,45 @@
+@import "main"
+@import "footer"
+@import "header"
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px)
+    .navbar .has-megamenu
+        position: static!important
+    .navbar .megamenu
+        left: 5% 
+        width: 90% 
+        right: 5%
+        margin: auto
+        top: 58px
+        border: 0px solid red
+        margin-top: 201
+    .n-2:hover .dropdown-menu
+        display: block
+
+/* ============ desktop view .end// ============ */
+
+    
+
+/* ============ mobile view ============ */
+@media(max-width: 575px)
+    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse
+        overflow-y: auto
+        max-height: 90vh
+    .set-1
+        padding: 15px
+    .set-2
+        justify-content: center!important
+    .n-2:hover .dropdown-menu
+        display: none
+    .carousel-item
+        img
+            height: 250px
+    .p-mod
+        .card
+            display: none
+        .showIcon
+            display: block
+            margin: auto
+    .show-phone 
+        display: block!important
